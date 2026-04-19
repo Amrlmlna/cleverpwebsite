@@ -1,0 +1,731 @@
+﻿Node xml:
+<Desktop
+    nodeId="WQLkyLRf1"
+    position="absolute"
+    width="1200px"
+    height="fit-content"
+    top="1px"
+    left="-7px"
+    <!-- background color string or project color style path (if starts with /) -->
+    backgroundColor="/Page Background"
+    overflow="visible"
+    layout="stack"
+    stackDirection="vertical"
+    stackDistribution="start"
+    stackAlignment="center"
+>
+  <Hero
+      nodeId="UkV3Eje48"
+      width="1fr"
+      height="fit-content"
+      minHeight="800px"
+      overflow="visible"
+      layout="stack"
+      gap="80px"
+      padding="160px 44px 100px 44px"
+      stackDirection="vertical"
+      stackDistribution="center"
+      stackAlignment="center"
+  >
+    <Content
+        nodeId="xCCBiyJ13"
+        width="1fr"
+        height="fit-content"
+        maxWidth="800px"
+        zIndex="2"
+        overflow="visible"
+        layout="stack"
+        gap="22px"
+        stackDirection="vertical"
+        stackDistribution="start"
+        stackAlignment="start"
+    >
+      <TopContainer
+          nodeId="ihlulYbNX"
+          width="1fr"
+          height="fit-content"
+          overflow="visible"
+          layout="stack"
+          gap="36px"
+          stackDirection="vertical"
+          stackDistribution="center"
+          stackAlignment="center"
+      >
+        <KejarKarirImpianKamuDenganLebihMudah
+            nodeId="Jo2BUjCks"
+            position="sticky"
+            width="1fr"
+            height="fit-content"
+            top="100px"
+            maxWidth="640px"
+            <!-- project text style path, always starts with / -->
+            inlineTextStyle="/Heading 1"
+            zIndex="1"
+        >
+          kejar karir impian kamu dengan lebih mudah
+        </KejarKarirImpianKamuDenganLebihMudah>
+        <Device
+            nodeId="wJ7J4Qis4"
+            width="400px"
+            height="772px"
+            <!-- the component id this instance uses -->
+            componentId="FalrpEmll"
+            variant="S3XHRm0Lo"
+         />
+        <FromTransactionsToDappsExploreEveryCornerOfTheBitcoinUnivers
+            nodeId="DMpsp6ehk"
+            width="1fr"
+            height="fit-content"
+            maxWidth="440px"
+            <!-- project text style path, always starts with / -->
+            inlineTextStyle="/Body XL"
+        >
+          From transactions to dapps — explore every corner of the Bitcoin universe with ease.
+        </FromTransactionsToDappsExploreEveryCornerOfTheBitcoinUnivers>
+        <Image01
+            nodeId="ns07xv6Ia"
+            position="absolute"
+            width="320px"
+            height="68px"
+            rotation="1"
+            right="-123px"
+            bottom="301.5px"
+            aspectRatio="4.706"
+            borderRadius="12px"
+            <!-- background image URL, if you pass a new image url, the image will be uploaded to Framer -->
+            backgroundImage="https://framerusercontent.com/images/b5NVDoS0N14mdeqZXlwlNtq66Tg.png"
+            zIndex="1"
+            overflow="visible"
+         />
+        <Image02
+            nodeId="vmhzbK8XW"
+            position="absolute"
+            width="320px"
+            height="68px"
+            rotation="-6"
+            right="-153px"
+            bottom="428.5px"
+            aspectRatio="4.706"
+            borderRadius="12px"
+            <!-- background image URL, if you pass a new image url, the image will be uploaded to Framer -->
+            backgroundImage="https://framerusercontent.com/images/aH1bBLy4Drsovp6eIcG1ZlaG2Fw.png"
+            zIndex="1"
+            overflow="visible"
+         />
+        <Image03
+            nodeId="SOZd6jt51"
+            position="absolute"
+            width="320px"
+            height="68px"
+            rotation="2"
+            right="-123px"
+            bottom="567px"
+            aspectRatio="4.706"
+            borderRadius="12px"
+            <!-- background image URL, if you pass a new image url, the image will be uploaded to Framer -->
+            backgroundImage="https://framerusercontent.com/images/DQgZgOJ2wtctgNhcuqR8g67L8s.png"
+            zIndex="1"
+            overflow="visible"
+         />
+        <Image04
+            nodeId="CvEugKPW8"
+            position="absolute"
+            width="320px"
+            height="68px"
+            rotation="2"
+            bottom="579px"
+            left="-124px"
+            aspectRatio="4.706"
+            borderRadius="12px"
+            <!-- background image URL, if you pass a new image url, the image will be uploaded to Framer -->
+            backgroundImage="https://framerusercontent.com/images/Wl5vnM6B2urkYZ4guqafBpAxKU.png"
+            zIndex="1"
+            overflow="visible"
+         />
+        <Image05
+            nodeId="LwiyXansx"
+            position="absolute"
+            width="320px"
+            height="68px"
+            rotation="-2"
+            bottom="451.5px"
+            left="-154px"
+            aspectRatio="4.706"
+            borderRadius="12px"
+            <!-- background image URL, if you pass a new image url, the image will be uploaded to Framer -->
+            backgroundImage="https://framerusercontent.com/images/QFeUkbO8JHY5ZGgY0KZNgCl4.png"
+            zIndex="1"
+            overflow="visible"
+         />
+        <Image06
+            nodeId="rcbOFD5Pl"
+            position="absolute"
+            width="320px"
+            height="68px"
+            rotation="5"
+            bottom="324.5px"
+            left="-124px"
+            aspectRatio="4.706"
+            borderRadius="12px"
+            <!-- background image URL, if you pass a new image url, the image will be uploaded to Framer -->
+            backgroundImage="https://framerusercontent.com/images/WZ2e1rIRxTMlG29BZ6I4I37468.png"
+            zIndex="1"
+            overflow="visible"
+         />
+        <Glow
+            nodeId="h0UxCRZfC"
+            position="absolute"
+            width="470px"
+            height="597px"
+            top="210.5px"
+            centerX="50%"
+            borderRadius="888px"
+            <!-- background image URL, if you pass a new image url, the image will be uploaded to Framer -->
+            backgroundImage="https://framerusercontent.com/images/VkmUcVisuWxL6xmS3bXenYoZ7hQ.jpg"
+            zIndex="0"
+            overflow="hidden"
+         />
+      </TopContainer>
+      <BottomContainer
+          nodeId="G8JawwZTi"
+          width="1fr"
+          height="fit-content"
+          overflow="visible"
+          layout="stack"
+          gap="26px"
+          stackDirection="vertical"
+          stackDistribution="start"
+          stackAlignment="center"
+      >
+        <ButtonHero
+            nodeId="EbwQoY7Us"
+            width="fit-content"
+            height="fit-content"
+            <!-- the component id this instance uses -->
+            componentId="cn3iCb0RL"
+            variant="hqqAUu3Mg"
+            NJx3dOQS0="Download for free"
+            zAo2BcH6q="AppStoreLogo"
+         />
+        <CardsBrowsers
+            nodeId="cj8FgyCH6"
+            width="1fr"
+            height="fit-content"
+            <!-- the component id this instance uses -->
+            componentId="pYNeInGha"
+            variant="QMrlEj_q6"
+         />
+      </BottomContainer>
+    </Content>
+    <BgImage
+        nodeId="YYnkKlSby"
+        locked="true"
+        position="absolute"
+        width="100%"
+        height="566px"
+        top="0px"
+        centerX="50%"
+        borderRadius="0px"
+        <!-- background image URL, if you pass a new image url, the image will be uploaded to Framer -->
+        backgroundImage="https://framerusercontent.com/images/rioDBjHp4Ker1doqwtmPpPW9o.jpg"
+        zIndex="0"
+        overflow="hidden"
+     />
+    <BgNoise
+        nodeId="wLTBO35jC"
+        locked="true"
+        position="absolute"
+        top="0px"
+        right="0px"
+        bottom="-1.5px"
+        left="0px"
+        <!-- background image URL, if you pass a new image url, the image will be uploaded to Framer -->
+        backgroundImage="https://framerusercontent.com/images/6mcf62RlDfRfU61Yg5vb2pefpi4.png"
+        zIndex="1"
+     />
+  </Hero>
+  <Features
+      nodeId="KKXMDhUlP"
+      width="1fr"
+      height="fit-content"
+      overflow="hidden"
+      layout="stack"
+      gap="10px"
+      padding="8px 8px 0px 8px"
+      stackDirection="vertical"
+      stackDistribution="center"
+      stackAlignment="center"
+  >
+    <Content
+        nodeId="zgtAILiLU"
+        width="1fr"
+        height="fit-content"
+        <!-- background color string or project color style path (if starts with /) -->
+        backgroundColor="/Section Background"
+        borderRadius="32px"
+        zIndex="2"
+        overflow="hidden"
+        layout="stack"
+        gap="160px"
+        padding="120px 48px 0px 48px"
+        stackDirection="vertical"
+        stackDistribution="center"
+        stackAlignment="center"
+    >
+      <TopContainer
+          nodeId="UhxZ3s_h6"
+          width="1fr"
+          height="fit-content"
+          overflow="visible"
+          layout="stack"
+          gap="120px"
+          stackDirection="vertical"
+          stackDistribution="center"
+          stackAlignment="center"
+      >
+        <Header
+            nodeId="FzZeUmzpO"
+            width="1fr"
+            height="fit-content"
+            maxWidth="1200px"
+            zIndex="2"
+            overflow="visible"
+            layout="stack"
+            gap="12px"
+            stackDirection="horizontal"
+            stackDistribution="space-between"
+            stackAlignment="start"
+        >
+          <YourUltimateBitcoinWalletPackedWithFeaturesToSimplifyYourCry
+              nodeId="ZkSrFUplv"
+              width="1fr"
+              height="fit-content"
+              maxWidth="560px"
+              <!-- project text style path, always starts with / -->
+              inlineTextStyle="/Heading 2"
+              gridFillHeight="false"
+          >
+            Your ultimate Bitcoin wallet, packed with features to simplify your crypto journey
+          </YourUltimateBitcoinWalletPackedWithFeaturesToSimplifyYourCry>
+          <TextButton
+              nodeId="vUZfl_BgP"
+              width="1fr"
+              height="fit-content"
+              maxWidth="360px"
+              overflow="visible"
+              layout="stack"
+              gap="23px"
+              stackDirection="vertical"
+              stackDistribution="start"
+              stackAlignment="start"
+          >
+            <FromAdvancedToolsToSeamlessNavigationWeVeDesignedEverythingT
+                nodeId="RzDXFSAOR"
+                width="1fr"
+                height="fit-content"
+                maxWidth="360px"
+                <!-- project text style path, always starts with / -->
+                inlineTextStyle="/Body L"
+            >
+              From advanced tools to seamless navigation, we’ve designed everything to elevate your Bitcoin experience.
+            </FromAdvancedToolsToSeamlessNavigationWeVeDesignedEverythingT>
+            <ButtonDark
+                nodeId="CzwBuQ4Lw"
+                width="fit-content"
+                height="fit-content"
+                <!-- the component id this instance uses -->
+                componentId="EkM0gazg6"
+                A6ekXdHnO="Download now"
+                C4JAGwo9W="AppStoreLogo"
+                sKlMDu9je="true"
+                XCr2CPqh1="https://www.apple.com/app-store/"
+             />
+          </TextButton>
+        </Header>
+        <Bento
+            nodeId="bcLqYrSe9"
+            width="1fr"
+            height="1070px"
+            maxWidth="1200px"
+            <!-- background color string or project color style path (if starts with /) -->
+            backgroundColor="rgb(18, 18, 18)"
+            borderRadius="44px"
+            overflow="visible"
+            layout="grid"
+            gap="6px"
+            padding="6px"
+            gridColumns="2"
+            gridRows="3"
+            gridAlignment="center"
+            gridColumnWidthType="minmax"
+            gridColumnWidth="200"
+            gridColumnMinWidth="50"
+            gridRowHeightType="fixed"
+            gridRowHeight="260"
+        >
+          <BentoGridBentoCard3
+              nodeId="CLCxpw6ac"
+              width="1fr"
+              height="1fr"
+              <!-- the component id this instance uses -->
+              componentId="pOhTsbz6n"
+              variant="aOOM98ZMh"
+              dtObIIkjJ="BellRinging"
+              q_cggSFJi="Push Notifications"
+              LLnFjDC6t="Stay on top of your activity with instant alerts for all transactions."
+           />
+          <BentoGridBentoCard1
+              nodeId="ZTwMDqh_h"
+              width="1fr"
+              height="1fr"
+              <!-- the component id this instance uses -->
+              componentId="Qo0g1pCgz"
+              variant="ku9igc00x"
+              FQNdmocg5="Effortless Transactions"
+              byQY1YCDp="Send and receive Bitcoin instantly with a user-friendly interface."
+              V0hQlPCXC="HandArrowDown"
+           />
+          <BentoGridBentoCardQuote
+              nodeId="FPbzVMJJ0"
+              width="1fr"
+              height="1fr"
+              <!-- the component id this instance uses -->
+              componentId="povMj0kro"
+              variant="hurxiOC2k"
+              QvdYlDfJd=""I've been working on a new electronic cash system that's fully peer-to-peer, with no trusted third party. ”"
+              cDp1tykwd="— Satoshi Nakomoto"
+           />
+          <BentoGridBentoCard2
+              nodeId="zZ67XkUGb"
+              width="100px"
+              height="1fr"
+              <!-- the component id this instance uses -->
+              componentId="OGzyxVWBo"
+              variant="LAx4pMMFu"
+              MyvdZHNsR="Real-Time Portfolio Insights"
+              HRwARp7hL="Track your Bitcoin balance and transaction history with live updates."
+              k7c5wjqgb="ChartDonut"
+           />
+        </Bento>
+      </TopContainer>
+      <BottomContainer
+          nodeId="PpnlAvDh8"
+          width="1fr"
+          height="fit-content"
+          overflow="visible"
+          layout="stack"
+          gap="88px"
+          stackDirection="vertical"
+          stackDistribution="center"
+          stackAlignment="center"
+      >
+        <ExploreCreateAndTradeSeamlesslyInTheBitcoinEcosystem
+            nodeId="KDxRFQdKQ"
+            width="1fr"
+            height="fit-content"
+            maxWidth="560px"
+            <!-- project text style path, always starts with / -->
+            inlineTextStyle="/Heading 2"
+            gridFillHeight="false"
+        >
+          Explore, create, and trade seamlessly in the Bitcoin ecosystem.
+        </ExploreCreateAndTradeSeamlesslyInTheBitcoinEcosystem>
+        <Cards
+            nodeId="rJzihIO0B"
+            width="1fr"
+            height="fit-content"
+            maxWidth="1200px"
+            borderRadius="40px"
+            overflow="visible"
+            layout="grid"
+            padding="6px"
+            gridColumns="3"
+            gridRows="3"
+            gridAlignment="center"
+            gridColumnWidthType="minmax"
+            gridColumnWidth="200"
+            gridColumnMinWidth="50"
+            gridRowHeightType="fixed"
+            gridRowHeight="140"
+        >
+          <CardsFeature
+              nodeId="OjqfmbnuJ"
+              width="1fr"
+              height="fit-content"
+              rotation="1"
+              <!-- the component id this instance uses -->
+              componentId="X4JOoPrvh"
+              c34IiCKIt="Mint and Secure SRC-20 Tokens"
+           />
+          <CardsFeature
+              nodeId="fmloRtncT"
+              width="100px"
+              height="fit-content"
+              rotation="-1"
+              <!-- the component id this instance uses -->
+              componentId="X4JOoPrvh"
+              c34IiCKIt="Trade, Collect, and Inscribe Ordinals"
+           />
+          <CardsFeature
+              nodeId="YI8ncmshj"
+              width="100px"
+              height="fit-content"
+              rotation="1"
+              <!-- the component id this instance uses -->
+              componentId="X4JOoPrvh"
+              c34IiCKIt="Purchase STX tokens to power L2 apps on Stacks."
+           />
+        </Cards>
+        <BgGlow
+            nodeId="TxguThmWO"
+            opacity="0.45"
+            locked="true"
+            position="absolute"
+            width="767px"
+            height="492px"
+            top="-110.5px"
+            centerX="50%"
+            borderRadius="0px"
+            <!-- background image URL, if you pass a new image url, the image will be uploaded to Framer -->
+            backgroundImage="https://framerusercontent.com/images/1bu74hAN2GF8rLtJYAqkZUpP5KA.jpg"
+            zIndex="0"
+            overflow="hidden"
+         />
+      </BottomContainer>
+      <BgStripes
+          nodeId="z6N84MBwP"
+          locked="true"
+          position="absolute"
+          width="100%"
+          top="0px"
+          bottom="-212.5px"
+          centerX="50%"
+          maxWidth="1260px"
+          zIndex="1"
+          overflow="hidden"
+       />
+    </Content>
+  </Features>
+  <Security
+      nodeId="AgBd3bDm6"
+      width="1fr"
+      height="fit-content"
+      overflow="hidden"
+      layout="stack"
+      gap="72px"
+      padding="100px 48px 100px 48px"
+      stackDirection="vertical"
+      stackDistribution="center"
+      stackAlignment="center"
+  >
+    <BgStripes
+        nodeId="ROMXFBgkv"
+        locked="true"
+        position="absolute"
+        width="96%"
+        height="100%"
+        top="0px"
+        centerX="50%"
+        maxWidth="1260px"
+        borderWidth="0px 1px 0px 1px"
+        borderStyle="solid"
+        borderColor="/Background Stripes"
+        zIndex="1"
+        overflow="hidden"
+     />
+    <FeaturesFeaturesSection
+        nodeId="EBUnVeKOV"
+        width="1fr"
+        height="fit-content"
+        maxWidth="1200px"
+        <!-- the component id this instance uses -->
+        componentId="ETgg_N0T5"
+        variant="zvALYEPMs"
+     />
+  </Security>
+  <Integrations
+      nodeId="nVhxX73vp"
+      width="1fr"
+      height="fit-content"
+      borderRadius="0px"
+      zIndex="2"
+      overflow="hidden"
+      layout="stack"
+      gap="100px"
+      padding="100px 48px 140px 48px"
+      stackDirection="vertical"
+      stackDistribution="center"
+      stackAlignment="center"
+  >
+    <YourComprehensiveGatewayToBitcoinDappsAndTools
+        nodeId="kYC4radXK"
+        width="1fr"
+        height="fit-content"
+        maxWidth="560px"
+        <!-- project text style path, always starts with / -->
+        inlineTextStyle="/Heading 2"
+        gridFillHeight="false"
+    >
+      Your comprehensive gateway to Bitcoin dapps and tools
+    </YourComprehensiveGatewayToBitcoinDappsAndTools>
+    <Integrations
+        nodeId="TwRzZxmnS"
+        width="1fr"
+        height="fit-content"
+        <!-- the component id this instance uses -->
+        componentId="PPNVUycLl"
+        variant="g63TfDEVY"
+     />
+    <BgStripes
+        nodeId="Z8Y57SQSD"
+        locked="true"
+        position="absolute"
+        width="96%"
+        height="2117px"
+        top="0px"
+        centerX="50%"
+        maxWidth="1260px"
+        borderWidth="0px 1px 0px 1px"
+        borderStyle="solid"
+        borderColor="/Background Stripes"
+        zIndex="1"
+        overflow="hidden"
+     />
+    <BgImage
+        nodeId="pvC2ttk2T"
+        opacity="0.35"
+        locked="true"
+        position="absolute"
+        height="317px"
+        top="0.5px"
+        right="-0.5px"
+        left="-0.5px"
+        borderRadius="0px"
+        <!-- background image URL, if you pass a new image url, the image will be uploaded to Framer -->
+        backgroundImage="https://framerusercontent.com/images/bxBnkhqgW5eEL68JFI2DArhr70.png"
+        zIndex="0"
+        overflow="hidden"
+     />
+  </Integrations>
+  <NavigationNavbar
+      nodeId="UJq7AIzmw"
+      position="fixed"
+      width="440px"
+      height="fit-content"
+      top="24px"
+      centerX="50%"
+      <!-- the component id this instance uses -->
+      componentId="MRyhKy2pa"
+      variant="wNoLpN2ea"
+   />
+  <NavigationFooter
+      nodeId="u4jtu2LXW"
+      width="1fr"
+      height="fit-content"
+      <!-- the component id this instance uses -->
+      componentId="tCOsB_cx3"
+      variant="gKcABpiad"
+      zF5QnhMJ8="Experience Bitcoin like never before with Wallet"
+      EpKdfVbwg="Get Wallet for free"
+   />
+  <SmoothScroll
+      nodeId="sAufX3Quk"
+      position="absolute"
+      width="fit-content"
+      height="fit-content"
+      bottom="0px"
+      centerX="50%"
+      intensity="3"
+   />
+  <BgStripes
+      nodeId="m2yIpBAKd"
+      locked="true"
+      position="absolute"
+      width="96%"
+      height="2117px"
+      top="0px"
+      centerX="50%"
+      maxWidth="1260px"
+      borderWidth="0px 1px 0px 1px"
+      borderStyle="solid"
+      borderColor="/Background Stripes"
+      zIndex="1"
+      overflow="hidden"
+   />
+</Desktop>
+<!-- This is a non-primary variant. To see children inside, call getNodeXml again on this nodeId. -->
+<Tablet
+    nodeId="kMq4Zevmu"
+    position="absolute"
+    width="810px"
+    height="fit-content"
+    top="1px"
+    left="1293px"
+    <!-- background color string or project color style path (if starts with /) -->
+    backgroundColor="/Page Background"
+    overflow="visible"
+    layout="stack"
+    stackDirection="vertical"
+    stackDistribution="start"
+    stackAlignment="center"
+ />
+<!-- This is a non-primary variant. To see children inside, call getNodeXml again on this nodeId. -->
+<Phone
+    nodeId="Rl2ciP7_2"
+    position="absolute"
+    width="390px"
+    height="fit-content"
+    top="1px"
+    left="2203px"
+    <!-- background color string or project color style path (if starts with /) -->
+    backgroundColor="/Page Background"
+    overflow="hidden"
+    layout="stack"
+    stackDirection="vertical"
+    stackDistribution="start"
+    stackAlignment="center"
+ />
+<Node
+    nodeId="ZA3xxp0FN"
+    position="absolute"
+    width="241px"
+    height="fit-content"
+    top="1px"
+    left="-381px"
+    note="Hey!
+
+Congratulations on remixing Wallet – you've got impeccable taste 💛
+
+Psst.. Want to get 3 months of any premium Framer plan for free? 👇"
+    color="yellow"
+    alignment="left"
+    useScriptFont="true"
+    smallFont="true"
+    preview="false"
+    shadow="true"
+ />
+<Node
+    nodeId="AC3cEccAF"
+    position="absolute"
+    width="241px"
+    height="203px"
+    top="282px"
+    left="-381px"
+    borderRadius="8px"
+    overflow="hidden"
+>
+  <!-- Call getNodeXml on this node to get more details, character limit was reached -->
+</Node>
+<Node
+    nodeId="PJD70yDVn"
+    position="absolute"
+    width="61px"
+    height="55px"
+    top="211px"
+    left="-291px"
+    aspectRatio="1.105"
+    <!-- background image URL, if you pass a new image url, the image will be uploaded to Framer -->
+    backgroundImage="https://framerusercontent.com/images/r1Ytl9jTdOhjglzCAgb7LrAdjBA.png"
+    overflow="visible"
+ />
+

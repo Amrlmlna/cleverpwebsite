@@ -1,26 +1,36 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@plugin "@tailwindcss/typography";
+@theme {
+  --color-brand-cream: #FFFAF5;
+  --color-brand-dark: #0A0A0A;
+  --color-brand-gray: #171717;
+  --color-brand-neutral: #555555;
+  --color-brand-accent: #FF5A1F;
+  --font-sans: var(--font-bricolage-grotesque), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-brand-cream text-brand-dark font-sans transition-colors duration-700 ease-in-out;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Custom utility for the bento grid blur */
+@layer utilities {
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl;
+  }
+  .glass-card-dark {
+    @apply bg-brand-dark/50 backdrop-blur-xl border border-white/10 rounded-3xl;
+  }
+}
+
+/* Hide default scrollbars for sleek aesthetic */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
