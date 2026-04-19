@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: [],
     },
-    sitemap: "https://clevercv.app/sitemap.xml",
+    sitemap: "https://cleverpwebsite.vercel.app/sitemap.xml",
   };
 }

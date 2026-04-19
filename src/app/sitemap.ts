@@ -2,7 +2,7 @@ import { getAllArticles } from "@/lib/articles";
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://clevercv.app";
+  const baseUrl = "https://cleverpwebsite.vercel.app";
 
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: new Date(), changeFrequency: "weekly", priority: 1.0 },

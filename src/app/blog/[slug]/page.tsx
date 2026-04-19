@@ -64,11 +64,11 @@ export default async function ArticlePage({
     publisher: {
       "@type": "Organization",
       name: "CleverCV",
-      url: "https://clevercv.app",
+      url: "https://cleverpwebsite.vercel.app",
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://clevercv.app/blog/${article.slug}`,
+      "@id": `https://cleverpwebsite.vercel.app/blog/${article.slug}`,
     },
   };
 
