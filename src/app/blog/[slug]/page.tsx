@@ -2,34 +2,40 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, Clock, User } from "lucide-react";
 import FinalCTA from "@/components/FinalCTA";
+import PortableText from "@/components/blog/PortableText";
 import { getAllArticles, getArticleBySlug } from "@/lib/articles";
+import { siteConfig } from "@/lib/site-config";
 import type { Metadata } from "next";
 
-// Tell Next.js which slugs exist at build time
+export const revalidate = false;
+
 export async function generateStaticParams() {
-  return getAllArticles().map((a) => ({ slug: a.slug }));
+  const articles = await getAllArticles();
+  return articles.map((a) => ({ slug: a.slug }));
 }
 
-// Dynamic SEO metadata per article
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const article = getArticleBySlug(slug);
+  const article = await getArticleBySlug(slug);
   if (!article) return { title: "Artikel tidak ditemukan" };
 
   return {
     title: `${article.title} | CleverCV Blog`,
     description: article.description,
+    alternates: {
+      canonical: `/blog/${article.slug}`,
+    },
     openGraph: {
       title: article.title,
       description: article.description,
       type: "article",
       publishedTime: article.dateISO,
       authors: [article.author],
-      siteName: "CleverCV",
+      siteName: siteConfig.name,
     },
     twitter: {
       card: "summary_large_image",
@@ -45,11 +51,12 @@ export default async function ArticlePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const article = getArticleBySlug(slug);
+  const article = await getArticleBySlug(slug);
 
   if (!article) notFound();
 
-  // JSON-LD structured data for Google + LLM discoverability
+  const articleUrl = `${siteConfig.url}/blog/${article.slug}`;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -63,21 +70,34 @@ export default async function ArticlePage({
     },
     publisher: {
       "@type": "Organization",
-      name: "CleverCV",
-      url: "https://cleverpwebsite.vercel.app",
+      name: siteConfig.name,
+      url: siteConfig.url,
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://cleverpwebsite.vercel.app/blog/${article.slug}`,
+      "@id": articleUrl,
     },
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Beranda", item: siteConfig.url },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${siteConfig.url}/blog` },
+      { "@type": "ListItem", position: 3, name: article.title, item: articleUrl },
+    ],
   };
 
   return (
     <>
-      {/* JSON-LD for Google + LLM RAG indexing */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
       <main className="w-full min-h-screen flex flex-col bg-[#FFFAF5] pt-28">
@@ -129,20 +149,38 @@ export default async function ArticlePage({
 
         {/* Article Content */}
         <article className="w-full max-w-3xl mx-auto px-6 pb-20">
-          <div
-            className="prose prose-neutral prose-lg max-w-none
-              prose-headings:font-bricolage prose-headings:font-bold prose-headings:tracking-tight prose-headings:text-[#0A0A0A]
-              prose-h2:text-[26px] prose-h2:mt-10 prose-h2:mb-4
-              prose-h3:text-[20px] prose-h3:mt-8 prose-h3:mb-3
-              prose-p:text-neutral-700 prose-p:leading-[1.75] prose-p:text-[17px]
-              prose-li:text-neutral-700 prose-li:text-[17px]
-              prose-strong:text-[#0A0A0A] prose-strong:font-semibold
-              prose-a:text-orange-600 prose-a:no-underline hover:prose-a:underline
-              prose-table:text-sm prose-th:bg-neutral-100 prose-th:font-semibold
-              prose-td:border prose-th:border prose-td:px-3 prose-td:py-2 prose-th:px-3 prose-th:py-2
-              prose-table:border-collapse prose-table:w-full"
-            dangerouslySetInnerHTML={{ __html: article.content }}
-          />
+          {article.body ? (
+            <div
+              className="prose prose-neutral prose-lg max-w-none
+                prose-headings:font-bricolage prose-headings:font-bold prose-headings:tracking-tight prose-headings:text-[#0A0A0A]
+                prose-h2:text-[26px] prose-h2:mt-10 prose-h2:mb-4
+                prose-h3:text-[20px] prose-h3:mt-8 prose-h3:mb-3
+                prose-p:text-neutral-700 prose-p:leading-[1.75] prose-p:text-[17px]
+                prose-li:text-neutral-700 prose-li:text-[17px]
+                prose-strong:text-[#0A0A0A] prose-strong:font-semibold
+                prose-a:text-orange-600 prose-a:no-underline hover:prose-a:underline
+                prose-table:text-sm prose-th:bg-neutral-100 prose-th:font-semibold
+                prose-td:border prose-th:border prose-td:px-3 prose-td:py-2 prose-th:px-3 prose-th:py-2
+                prose-table:border-collapse prose-table:w-full"
+            >
+              <PortableText body={article.body} />
+            </div>
+          ) : article.content ? (
+            <div
+              className="prose prose-neutral prose-lg max-w-none
+                prose-headings:font-bricolage prose-headings:font-bold prose-headings:tracking-tight prose-headings:text-[#0A0A0A]
+                prose-h2:text-[26px] prose-h2:mt-10 prose-h2:mb-4
+                prose-h3:text-[20px] prose-h3:mt-8 prose-h3:mb-3
+                prose-p:text-neutral-700 prose-p:leading-[1.75] prose-p:text-[17px]
+                prose-li:text-neutral-700 prose-li:text-[17px]
+                prose-strong:text-[#0A0A0A] prose-strong:font-semibold
+                prose-a:text-orange-600 prose-a:no-underline hover:prose-a:underline
+                prose-table:text-sm prose-th:bg-neutral-100 prose-th:font-semibold
+                prose-td:border prose-th:border prose-td:px-3 prose-td:py-2 prose-th:px-3 prose-th:py-2
+                prose-table:border-collapse prose-table:w-full"
+              dangerouslySetInnerHTML={{ __html: article.content }}
+            />
+          ) : null}
         </article>
 
         {/* CTA Banner */}

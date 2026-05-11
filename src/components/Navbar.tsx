@@ -6,6 +6,7 @@ import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { FileText, LifeBuoy, BookOpen } from "lucide-react";
+import { siteConfig } from "@/lib/site-config";
 
 // Pages with a dark background where the navbar must start in "light" (white text) mode
 const DARK_BG_ROUTES = ["/support"];
@@ -79,8 +80,10 @@ export default function Navbar() {
         </div>
 
         {/* CTA */}
-        <Link 
-          href="/dashboard"
+        <Link
+          href={siteConfig.links.playStore}
+          target="_blank"
+          rel="noopener noreferrer"
           className="relative inline-flex h-10 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 hover:scale-105 transition-transform"
         >
           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#FF5A1F_50%,#E2CBFF_100%)]" />

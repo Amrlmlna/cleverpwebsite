@@ -1,3 +1,4 @@
+import { siteConfig } from "@/lib/site-config";
 import type { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
@@ -7,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: [],
     },
-    sitemap: "https://cleverpwebsite.vercel.app/sitemap.xml",
+    sitemap: `${siteConfig.url}/sitemap.xml`,
   };
 }
