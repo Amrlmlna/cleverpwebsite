@@ -126,12 +126,6 @@ export const postType = defineType({
             },
           ],
         },
-        {
-          type: "code",
-          options: {
-            withFilename: true,
-          },
-        },
       ],
     }),
   ],
