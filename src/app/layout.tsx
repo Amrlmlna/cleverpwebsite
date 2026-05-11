@@ -44,8 +44,7 @@ export const metadata: Metadata = {
   },
 };
 
-import Navbar from "@/components/Navbar";
-import GlobalScrollTransition from "@/components/GlobalScrollTransition";
+import ConditionalNavbar from "@/components/ConditionalNavbar";
 
 export default function RootLayout({
   children,
@@ -58,8 +57,7 @@ export default function RootLayout({
       className={`${figtree.variable} ${bricolage.variable} antialiased h-full`}
     >
       <body className="min-h-full flex flex-col font-sans">
-        <GlobalScrollTransition />
-        <Navbar />
+        <ConditionalNavbar />
         {children}
       </body>
     </html>
