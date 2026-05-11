@@ -28,6 +28,29 @@ const websiteJsonLd = {
   },
 };
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Apa itu CV ATS Friendly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CV ATS Friendly adalah CV yang didesain agar mudah dibaca oleh sistem Applicant Tracking System (ATS) yang digunakan banyak perusahaan besar. CleverCV memastikan struktur dan kata kunci CV Anda optimal untuk sistem ini."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bagaimana cara kerja AI di CleverCV?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI kami menganalisis deskripsi pekerjaan yang Anda tuju dan memberikan saran kata kunci serta penyesuaian konten agar profil Anda terlihat paling relevan di mata HRD."
+      }
+    }
+  ]
+};
+
 export default function Home() {
   return (
     <>
@@ -38,6 +61,10 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <main className="w-full flex-1 flex flex-col items-center overflow-hidden">
         <HeroSection />
